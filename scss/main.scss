@@ -1,0 +1,90 @@
+@import 'variables';
+@mixin background {
+    background-position: center;
+    background-size: cover;
+}
+@mixin flex($center-1, $center-2) {
+    display: flex;
+    justify-content: $center-1;
+    align-items: $center-2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+}
+
+header {
+    position: relative;
+    background: $bg-header-mobile;
+    @include background;
+    height: 80vh;
+}
+
+.nav {
+    text-transform: uppercase;
+    font-family: $ff-josefin-sans;
+    color: $clr-white;
+
+    #{&}__checkbox {
+        display: none;
+    }
+
+    #{&}__toogle {
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        padding: 2.5rem 1rem 0 0;
+
+        .close {
+            display: none;
+        }
+    }
+
+    #{&}__menu {
+        // display: flex;
+        // flex-direction: column;
+        // row-gap: 1rem;
+        padding: 2rem 0 0 1rem;
+
+        li {
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                color: $clr-white;
+            }
+        }
+          
+        .links {
+            display: flex;
+            align-items: center;
+            height: 69vh;
+
+            &__wrapper {
+                display: flex;
+                // align-items: center;
+                flex-direction: column;
+                row-gap: 1rem;
+                width: 100%;
+                margin-right: 1rem;
+                border: 1px solid $clr-white;
+            }
+
+            &__nav {
+                display: none;
+            }
+            
+            &__intro {
+                letter-spacing: 0.1rem;
+                padding: 1.5rem;
+                font-size: clamp(1.5rem, 2rem, 3rem);
+            }
+        }
+    }
+}

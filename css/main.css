@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+}
+
+header {
+  position: relative;
+  background: url(../images/mobile/image-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
+.nav {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+}
+
+.nav .nav__checkbox {
+  display: none;
+}
+
+.nav .nav__toogle {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  padding: 2.5rem 1rem 0 0;
+}
+
+.nav .nav__toogle .close {
+  display: none;
+}
+
+.nav .nav__menu {
+  padding: 2rem 0 0 1rem;
+}
+
+.nav .nav__menu li {
+  list-style-type: none;
+}
+
+.nav .nav__menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav .nav__menu .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 69vh;
+}
+
+.nav .nav__menu .links__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1rem;
+  width: 100%;
+  margin-right: 1rem;
+  border: 1px solid white;
+}
+
+.nav .nav__menu .links__nav {
+  display: none;
+}
+
+.nav .nav__menu .links__intro {
+  letter-spacing: 0.1rem;
+  padding: 1.5rem;
+  font-size: clamp(1.5rem, 2rem, 3rem);
+}
+/*# sourceMappingURL=main.css.map */
